@@ -1,12 +1,12 @@
-.. PyQGIS documentation master file, created by 
+.. PyQGIS documentation master file, created by
    sphinx-quickstart on Fri Apr 16 10:42:28 2010.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-PyQGIS Developer Cookbook
+Поваренная книга разработчика PyQGIS
 ===========================================
 
-Contents:
+Содержание:
 
 .. toctree::
    :maxdepth: 2
@@ -23,12 +23,12 @@ Contents:
    measure
    settings
    pluginlayer
+   network-analysis
    plugins
 
-Indices and tables
-==================
+Индексы и таблицы
+=================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
