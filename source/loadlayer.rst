@@ -59,9 +59,13 @@ The following list shows how to access various data sources using vector data pr
 
     uri = QgsDataSourceURI()
     uri.setDatabase('/home/martin/test-2.3.sqlite')
-    uri.setDataSource('','Towns', 'Geometry')
-
-    vlayer = QgsVectorLayer(uri.uri(), 'Towns', 'spatialite')
+    schema = ''
+    table = 'Towns'
+    geom_column = 'Geometry'
+    uri.setDataSource(schema, table, geom_colum)
+    
+    display_name = 'Towns'
+    vlayer = QgsVectorLayer(uri.uri(), display_name, 'spatialite')
 
 * MySQL WKB-based geometries, through OGR - data source is the connection string to the table::
     
