@@ -196,7 +196,7 @@ la classe (e. :file:`testplugin.py`)::
       self.iface.removeToolBarIcon(self.action)
 
       # disconnessione dal segnale dell'area mappa
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
     def run(self):
       # crea e mostra un dialogo di configurazione
@@ -241,7 +241,7 @@ il menu `Plugins`::
         self.iface.removeToolBarIcon(self.action)
 
       # disconnessione dal segnale dell'area mappa
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
 L'elenco completo dei metodi è disponibile in `API docs <http://qgis.org/api/classQgisInterface.html>`_.
 Le uniche funzioni che **devono** esistere sono ``initGui()`` e ``unload()``.
