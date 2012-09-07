@@ -232,7 +232,7 @@ plugin.py
       self.iface.removeToolBarIcon(self.action)
 
       # отключаемся от сигнала карты
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
     def run(self):
       # создаем и показываем диалог настройки или выполняем что-то еще
@@ -284,7 +284,7 @@ plugin.py
         self.iface.removeToolBarIcon(self.action)
 
       # отключаемся от сигнала карты
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
 
 Полный список методов, которые можно использовать для размещения модуля
