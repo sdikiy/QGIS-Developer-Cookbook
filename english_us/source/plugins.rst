@@ -227,7 +227,7 @@ case it's called ``TestPlugin``. This is how should this class look like
       self.iface.removeToolBarIcon(self.action)
 
       # disconnect form signal of the canvas
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
     def run(self):
       # create and show a configuration dialog or something similar
@@ -277,7 +277,7 @@ we will use the old `Plugins` menu. Here is an example for `Raster` menu::
         self.iface.removeToolBarIcon(self.action)
 
       # disconnect form signal of the canvas
-      QObject.disconnect(self.iface.MapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
+      QObject.disconnect(self.iface.mapCanvas(), SIGNAL("renderComplete(QPainter *)"), self.renderTest)
 
 
 A full list of methods that can be used to place plugin under these menus/toolbars is
